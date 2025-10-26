@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #111;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h2 {
+  font-weight: 600;
+}
+
+main.country-detail {
+  padding: 50px;
+}
+
+.back-btn {
+  background: white;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.country-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.country-flag {
+  width: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.country-info {
+  flex: 1;
+}
+
+.country-info h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.details p {
+  margin: 8px 0;
+}
+
+.borders {
+  margin-top: 40px;
+}
+
+.border-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.border-buttons button {
+  background: white;
+  border: none;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

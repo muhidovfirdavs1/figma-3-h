@@ -1,0 +1,123 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f3f3f3; 
+  color: #111517;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+.header-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 28px;
+}
+.site-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111517;
+}
+
+
+.search-wrap {
+  margin-left: auto; 
+}
+.search-input {
+  width: 260px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  font-size: 13px;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02) inset;
+}
+.search-input::placeholder {
+  color: #9aa0a6;
+}
+
+
+.main .container {
+  max-width: 1220px;
+  margin: 28px auto;
+  padding: 0 28px 80px;
+}
+
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 26px 34px; 
+}
+
+
+.country-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(16,24,40,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.country-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(16,24,40,0.10);
+}
+
+
+.flag img {
+  width: 100%;
+  height: 160px; 
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px 16px 20px;
+  color: #111517;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.country-name {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #111517;
+}
+
+
+.meta-label {
+  font-weight: 600;
+  color: #111;
+}
+
+
+@media (max-width: 900px) {
+  .header-inner { padding: 18px; }
+  .search-input { width: 200px; }
+  .flag img { height: 150px; }
+  .countries-grid { gap: 22px; }
+}
+
+@media (max-width: 600px) {
+  .header-inner { padding: 14px; }
+  .site-title { font-size: 16px; }
+  .search-wrap { width: 100%; display: flex; justify-content: flex-end; }
+  .search-input { width: 170px; padding: 9px; font-size: 13px; }
+  .flag img { height: 140px; }
+  .countries-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; }
+  .main .container { padding: 0 16px 60px; }
+}
